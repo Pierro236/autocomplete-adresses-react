@@ -2,12 +2,12 @@
 import styles from "../styles/Form.css";
 import { useState } from "react";
 import { Autocomplete, useLoadScript } from "@react-google-maps/api";
-import { MAPS_API_KEY } from "./global.js";
+
 
 const Form = () => {
   //On initilise l'api en mettant la clé
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: MAPS_API_KEY,
+    googleMapsApiKey: process.env.MAPS_API_KEY,
     libraries: ["places"],
   });
   if (!isLoaded) console.log("not loaded");
