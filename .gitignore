@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+#Keys
+
+/src/components/global.js
+
 # production
 /build
 
