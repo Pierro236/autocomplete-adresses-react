@@ -2,7 +2,7 @@
 import styles from "../styles/Form.css";
 import { useState } from "react";
 import { Autocomplete, useLoadScript } from "@react-google-maps/api";
-
+import { MAPS_API_KEY } from "./global.js";
 
 const Form = () => {
   //On initilise l'api en mettant la clé
