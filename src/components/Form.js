@@ -2,7 +2,6 @@
 import styles from "../styles/Form.css";
 import { useState } from "react";
 import { Autocomplete, useLoadScript } from "@react-google-maps/api";
-import { MAPS_API_KEY } from "./global.js";
 
 const Form = () => {
   //On initilise l'api en mettant la clé
@@ -52,7 +51,7 @@ const Form = () => {
 
   return isLoaded ? (
     <div className="form">
-      <div className="title">Welcome Dog</div>
+      <div className="title">Welcome</div>
       <div className="subtitle">Let's find your address</div>
       <div className="input-container ic1">
         <Autocomplete // balise autocomplete (il suffit de mettre l'input dedant et la magie opère)
